@@ -1,6 +1,6 @@
 ^handler {
     if req.Method == "DELETE" {
         contact.archived = true
-        http.Redirect(w, req, "/htmx-template-fragments/archiveui", http.StatusSeeOther)
+        http.Redirect(w, req, "/demo/archiveui", http.StatusSeeOther)
     }
 }
