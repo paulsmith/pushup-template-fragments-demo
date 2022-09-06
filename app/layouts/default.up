@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>^if sectionDefined("title") {
+            <text>^outputSection("title")</text>
+        } else {
+            <text>Pushup app</text>
+        }</title>
+        <link rel="stylesheet" href="/static/pico.min.css" />
+        <link rel="stylesheet" href="/static/custom.css" />
+        <script src="/static/htmx.min.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            ^outputSection("contents")
+        </main>
+        <footer class="container">
+            <p>Made with Pushup. We're glad you're here.</p>
+            <p><a href="/view-source?route=^req.URL.Path">View Pushup source</a></p>
+        </footer>
+    </body>
+</html>

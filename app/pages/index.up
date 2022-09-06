@@ -1,0 +1,44 @@
+^import "time"
+
+^{
+    title := pushupGreeting // pushupGreeting declared in app/pkg/app.go
+    greeting := "Hello"
+    name := "world"
+    _ = title; _ = greeting; _ = name
+}
+
+^section title {
+    <text>^pushupGreeting</text>
+}
+
+<hgroup class="greeting">
+    <h1>^greeting, ^name!</h1>
+    <h2>^title</h2>
+</hgroup>
+
+<h3>Pushup is a modern web framework for Go with an old-school PHP vibe.</h3>
+
+<p>You just generated, built, and ran your first Pushup app.</p>
+
+<h4>Features</h4>
+
+<ul>
+    <li><b>Compiled</b><br/>fast; easy to deploy; compiler-checked safety</li>
+    <li><b>Modern <a href="https://htmx.org/essays/hypermedia-driven-applications/">hypertext</a></b><br/>great client-side interactivity from server-side apps, without JavaScript fatigue</li>
+    <li><b>File-based routing</b><br/>paths to Pushup files and directories map to URLs, with dynamic options</li>
+    <li><b>Builds on Go <tt>net/http</tt></b><br/>Pushup compiles down to pure Go, it's all just Go under the hood</li>
+    <li><b>Live-reloading dev mode</b><br/>developer conveniences, thanks to the speed of the Go compiler</li>
+</ul>
+
+^partial currenttime {
+    <p hx-get="/currenttime" hx-trigger="every 1s" hx-swap="outerHTML">
+        It is currently ^time.Now().Format(time.UnixDate).
+    </p>
+}
+
+<h4>What to do next?</h4>
+<ul>
+    <li>Design the layout template at <tt>app/layouts/default.up</tt></li>
+    <li>Override this file at <tt>app/pages/index.up</tt></li>
+    <li>Add new Pushup pages to <tt>app/pages</tt> and see them appear as routes</li>
+</ul>
