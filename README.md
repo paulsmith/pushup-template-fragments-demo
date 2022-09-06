@@ -11,13 +11,13 @@ Pushup calls "inline partials", but it's the same concept.
 <html>
     <body>
         <div hx-target="this">
-          ^partial archiveui {
-            ^if contact.archived {
-              <button hx-patch="/contacts/^contact.id/unarchive">Unarchive</button>
-            } else {
-              <button hx-delete="/contacts/^contact.id/">Archive</button>
+            ^partial archiveui {
+                ^if contact.archived {
+                    <button hx-patch="/contacts/^contact.id/unarchive">Unarchive</button>
+                } else {
+                    <button hx-delete="/contacts/^contact.id/">Archive</button>
+                }
             }
-          }
         </div>
         <h3>Contact</h3>
         <p>^contact.email</p>
