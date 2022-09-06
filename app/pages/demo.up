@@ -1,7 +1,10 @@
 <html>
     <body>
         <h1>htmx template fragments example</h1>
-        <p>See <a href="https://htmx.org/essays/template-fragments/">this essay</a></p>
+        <p>
+            See <a href="https://htmx.org/essays/template-fragments/">this essay</a>.
+            <a href="https://github.com/paulsmith/pushup-template-fragments-demo">Repo for this demo</a>.
+        </p>
         <hr />
         <div hx-target="this">
           ^partial archiveui {

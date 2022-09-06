@@ -18,7 +18,7 @@
         </main>
         <footer class="container">
             <p>Made with Pushup. We're glad you're here.</p>
-            <p><a href="/view-source?route=^req.URL.Path">View Pushup source</a></p>
+            <p><a href="/view-source?route=^req.URL.Path">View the Pushup source for this page</a></p>
         </footer>
     </body>
 </html>
