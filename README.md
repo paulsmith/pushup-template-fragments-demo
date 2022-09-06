@@ -33,9 +33,9 @@ kinds of server-side web apps.
 
 What does "page-oriented" mean? It means that the main unit of abstraction
 in Pushup is the page (a `.up` file), which is a combination of Go code and
-HTML markup in the same file (yes, PHP-style). The page is also the means
-of composition, because Pushup uses file-based routing, mapping filenames
-and directories to URLs paths (again, PHP-style).
+HTML markup in the same file. The page is also the means of composition,
+because Pushup uses file-based routing, mapping filenames and directories 
+to URLs paths.
 
 So you write Pushup pages, and then you run Pushup which compiles them
 and generates pure Go code. It builds a single artifact for your app,
