@@ -3,6 +3,8 @@
 This project demos Pushup's support for [template fragments][essay], which
 Pushup calls "inline partials", but it's the same concept.
 
+[Live demo](https://pushup-htmx-template-fragments.fly.dev/demo) (may or may not be still up when you read this)
+
 `app/pages/demo.up`:
 
 ```pushup
