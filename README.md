@@ -36,4 +36,32 @@ For example, if you had a page named `foo.up`, and an inline partial
 named `bar`, the page would be routed at `/foo`, and the partial at
 `/foo/bar`. Clients could access either as needed.
 
+## Demo app
+
+This Pushup app has the following project tree:
+
+```
+app/
+├── layouts
+│   └── default.up
+├── pages
+│   ├── contacts
+│   │   └── $id
+│   │       ├── index.up
+│   │       └── unarchive.up
+│   ├── demo.up
+│   ├── index.up
+│   └── view-source.up
+├── pkg
+│   └── app.go
+└── static
+    ├── custom.css
+    ├── htmx.min.js
+    └── pico.min.css
+```
+
+Run the app, either by building with `pushup build` and then executing
+the resulting Go binary, or directly with `pushup run`. Visit
+[http://localhost:8080/demo](http://localhost:8080/demo)
+
 [essay]: https://htmx.org/essays/template-fragments/
